@@ -1,0 +1,23 @@
+{
+  "name": "typescript_refactoring_essential",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register/transpile-only --project tsconfig.json \"**/test/*.test.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^11.7.6",
+    "ts-mocha": "^11.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "...",
+    "@types/node": "^18.19.130"
+  }
+}
