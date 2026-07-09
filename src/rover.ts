@@ -6,13 +6,16 @@ export interface Position {
 }
 
 export class Rover {
-    constructor(position: Position, heading: Heading) {}
+    constructor(
+        private readonly _position: Position,
+        private readonly _heading: Heading,
+    ) {}
 
     get position(): Position {
-        return { x: 0, y: 0 };
+        return this._position;
     }
 
     get heading(): Heading {
-        return "South";
+        return this._heading;
     }
 }
